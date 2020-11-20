@@ -43,27 +43,32 @@
             /* flex-grow: 1; */
         }
 
-       #content {
+        #nama {
+            margin-right: auto;
+        }
+
+        content {
             /* background-color: cornflowerblue; */
             display: flex;
             flex-direction: row;
+            justify-content: space-evenly;
             flex-basis: 3;
             /* flex-grow: 3; */
         }
 
-        #content-kiri, #content-kanan {
+        #content-intro, #content-edu {
             flex-basis: 1;
         }
 
-        #content-kiri {
+        /* #content-intro {
             background-color: #CCD5AE;
-        }
+        } */
 
-        #content-kanan {
+        #content-edu {
             background-color: #81B29A;
         }
 
-        #footer {
+        #content-bawah {
             background-color: #606C38;
             display: flex;
             justify-content: center;
@@ -76,34 +81,60 @@
         }
 
         .img-thumbnail {
-            width: 250px;
-            height: 320px;
+            width: 200px;
+            height: 180px;
             margin: auto;
         }
+
+        /*  */
     </style>
 </head>
 <body>
     
-    <!-- <div id="main"> -->
+<div id="main">
 
-        <div id="header">CURRICULUM VITAE</div>
-
-        <div id="content">
-
-            <div id="content-kiri">
-                <img src="PAS FOTO-JANE DWIPUTRI 3x4 BW.jpg" alt="foto" class="img-thumbnail rounded-lg">
-                <br>
-                <h1 class="display-4">Jane Dwiputri</h1>
-                <p class="lead"><em>Bachelor of International Relations</em></p>
-                <p class="lead"><em>Parahyangan Catholic University</em></p>
-            </div>
-
-            <div id="content-kanan">RIGHT CONTENT</div>
+    <div id="header">
+        <div id="nama">
+            <h1 class="display-4">Jane</h1>
+            <h1 class="display-4">Dwiputri</h1>
         </div>
 
-        <div id="footer">FOOTER</div>
-  
-    <!-- </div> -->
+        <div id="foto">
+            <img src="PAS FOTO-JANE DWIPUTRI 3x4 BW.jpg" alt="foto" class="img-thumbnail rounded-lg">
+        </div>
+
+        <div id="biodata">
+            <h3>🎈 Jakarta, 2<sup>nd</sup> June 1995</h3>
+            <h3>☎ +6281555888695</h3>
+            <h3>📩 jane.dwptrdjaja@gmail.com</h3>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="content-intro">
+            <div class="jumbotron">
+                <h1 class="display-4">Introduction</h1>
+                <p class="lead">Communicative and detail oriented is are words to describe Jane as a person.
+                    She adapts to the working environment and eager to learn new things. To work efficiently,
+                    she organize and arrange her assignments. She had participated in various committees, 
+                    as a staff and as a coordinator, while attending university.
+                    Always eager to keep learning and trying to be more knowledgeable as a person.</p>
+                
+            </div>
+        </div>
+
+        <div id="content-edu">
+            <div id="edulogo"><h1 class="display-4">Education 🎓</h1></div>
+            <div id="edu1"><p class="lead">2010 - 2013<br>SMAK 5 BPK Penabur, Jakarta</p></div>
+            <div id="edu2"><p class="lead">2013 - 2020<br>Parahyangan Catholic University<br>
+                                            Faculty of Social and Political Sciences<br>
+                                            Department of International Relations</p></div>
+        </div>
+    </div>
+
+    <div id="content-bawah"></div>
+
+</div>
 
 </body>
 
