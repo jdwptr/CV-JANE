@@ -24,7 +24,7 @@
         } */
 
         #main {
-            width: 700px;
+            width: 900px;
             height: 800px;
             display: flex;
             flex-direction: column;
@@ -40,6 +40,7 @@
 
         #header {
             background-color: #52796F;
+            flex-basis: 20%;
             /* flex-grow: 1; */
         }
 
@@ -47,17 +48,17 @@
             margin-right: auto;
         }
 
-        content {
+        #content {
             /* background-color: cornflowerblue; */
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            flex-basis: 3;
+            flex-basis: 50%;
             /* flex-grow: 3; */
         }
 
         #content-intro, #content-edu {
-            flex-basis: 1;
+            flex-basis: 50%;
         }
 
         /* #content-intro {
@@ -66,6 +67,7 @@
 
         #content-edu {
             background-color: #81B29A;
+            padding: 64px 32px;
         }
 
         #content-bawah {
@@ -73,6 +75,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-basis: 30%;
         }
 
         .editH3 {
@@ -112,7 +115,7 @@
 
     <div id="content">
         <div id="content-intro">
-            <div class="jumbotron">
+            <div class="jumbotron mb-0">
                 <h1 class="display-4">Introduction</h1>
                 <p class="lead">Communicative and detail oriented is are words to describe Jane as a person.
                     She adapts to the working environment and eager to learn new things. To work efficiently,
