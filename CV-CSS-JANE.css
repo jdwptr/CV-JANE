@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* padding: 20px; */
+    font-size: 20px;
+}
+
+/* #main div {
+    margin: 5px;
+} */
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    flex-direction: column; */
+    margin: auto;
+}
+
+#header, #content-bawah {
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    flex-basis: 20%;
+}
+
+#header {
+    background-color: #52796F;
+    padding: 64px ;
+    flex-basis: 20%;
+    /* flex-grow: 1; */
+}
+
+#nama {
+    margin-right: auto;
+}
+
+#content-tengah {
+    /* background-color: cornflowerblue; */
+    flex-basis: 50%; 
+}
+
+/* #content-intro, #content-edu {
+    flex-basis: 50%;
+} */
+
+#content-intro {
+    background-color: #CCD5AE;
+    padding: 64px;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+/* #judul-intro, #isi-intro {
+    justify-content: center;
+    align-items: center;
+} */
+
+#content-edu {
+    background-color: #81B29A;
+    padding: 64px;
+    /* display: flex;
+    flex-direction: row; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#content-bawah {
+    background-color: #606C38;
+    /* display: flex; */
+    
+    flex-basis: 30%;
+}
+#experience {
+    background-color: burlywood;
+    padding: 64px;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: auto;
+    min-width: auto;
+    max-width: 70%;
+}
+
+#skill {
+    background-color: cadetblue;
+    padding: 64px;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: auto;
+    min-width: auto;
+    max-width: 30%;
+}

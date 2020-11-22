@@ -1,154 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
-        crossorigin="anonymous">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            /* padding: 20px; */
-            font-size: 20px;
-        }
-
-        /* #main div {
-            margin: 5px;
-        } */
-
-        #main {
-            width: 900px;
-            height: 800px;
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-        }
-
-        #header, #footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-basis: 1;
-        }
-
-        #header {
-            background-color: #52796F;
-            flex-basis: 20%;
-            /* flex-grow: 1; */
-        }
-
-        #nama {
-            margin-right: auto;
-        }
-
-        #content {
-            /* background-color: cornflowerblue; */
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            flex-basis: 50%;
-            /* flex-grow: 3; */
-        }
-
-        #content-intro, #content-edu {
-            flex-basis: 50%;
-        }
-
-        /* #content-intro {
-            background-color: #CCD5AE;
-        } */
-
-        #content-edu {
-            background-color: #81B29A;
-            padding: 64px 32px;
-        }
-
-        #content-bawah {
-            background-color: #606C38;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-basis: 30%;
-        }
-
-        .editH3 {
-            font-size: 40px;
-            color: #354F52;
-        }
-
-        .img-thumbnail {
-            width: 200px;
-            height: 180px;
-            margin: auto;
-        }
-
-        /*  */
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CV-CSS-JANE.css">
 </head>
+
 <body>
-    
-<div id="main">
 
-    <div id="header">
-        <div id="nama">
-            <h1 class="display-4">Jane</h1>
-            <h1 class="display-4">Dwiputri</h1>
-        </div>
+    <div id="main" class="d-flex flex-column">
 
-        <div id="foto">
-            <img src="PAS FOTO-JANE DWIPUTRI 3x4 BW.jpg" alt="foto" class="img-thumbnail rounded-lg">
-        </div>
+        <div id="header" class="justify-content-center align-items-center">
 
-        <div id="biodata">
-            <h3>🎈 Jakarta, 2<sup>nd</sup> June 1995</h3>
-            <h3>☎ +6281555888695</h3>
-            <h3>📩 jane.dwptrdjaja@gmail.com</h3>
-        </div>
-    </div>
+            <div id="foto">
+                <img src="PAS FOTO-JANE DWIPUTRI 3x4 BW.jpg" alt="foto">
+            </div>
 
-    <div id="content">
-        <div id="content-intro">
-            <div class="jumbotron mb-0">
-                <h1 class="display-4">Introduction</h1>
-                <p class="lead">Communicative and detail oriented is are words to describe Jane as a person.
-                    She adapts to the working environment and eager to learn new things. To work efficiently,
-                    she organize and arrange her assignments. She had participated in various committees, 
-                    as a staff and as a coordinator, while attending university.
-                    Always eager to keep learning and trying to be more knowledgeable as a person.</p>
-                
+            <div id="nama">
+                <h1 style="text-align: left;">Jane Dwiputri</h1>
+            </div>
+
+            <div id="biodata">
+                <h3><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-date" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                        <path
+                            d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
+                    </svg> Jakarta, 2<sup>nd</sup> June 1995</h3>
+                <h3><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                    </svg> +6281555888695</h3>
+                <h3><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                    </svg> jane.dwptrdjaja@gmail.com</h3>
             </div>
         </div>
 
-        <div id="content-edu">
-            <div id="edulogo"><h1 class="display-4">Education 🎓</h1></div>
-            <div id="edu1"><p class="lead">2010 - 2013<br>SMAK 5 BPK Penabur, Jakarta</p></div>
-            <div id="edu2"><p class="lead">2013 - 2020<br>Parahyangan Catholic University<br>
-                                            Faculty of Social and Political Sciences<br>
-                                            Department of International Relations</p></div>
+        <div id="content-tengah" class=".flex-row">
+            <div id="content-intro">
+                <div id="judul-intro" class="justify-content-center align-items-center">
+                    <h1>Introduction</h1>
+                </div>
+                <div id="isi-intro" class="justify-content-center align-items-center">
+                    <p1>Communicative and detail oriented are words to describe Jane as a person.
+                        She adapts to the working environment and eager to learn new things.</p1>
+                    <p2>She had participated in various committees,
+                        as staff and as a coordinator, while attending university.
+                        Always eager to keep learning and to be more knowledgeable as a person.</p2>
+                </div>
+
+            </div>
         </div>
+
+        <div id="content-edu" class="d-flex flex-row justify-content-between align-items-center">
+            <!-- <div id="edulogo"> -->
+                <h1>Education 🎓</h1>
+            <!-- </div> -->
+            <div id="edu1">
+                <p>2010 - 2013<br>SMAK 5 BPK Penabur, Jakarta</p>
+            </div><br>
+            <div id="edu2">
+                <p>2013 - 2020<br>Parahyangan Catholic University<br>
+                    Faculty of Social and Political Sciences<br>
+                    Department of International Relations</p>
+            </div>
+        </div>
+    
+        <div id="content-bawah" class="d-flex flex-row justify-content-center align-items-center"">
+            <div id="experience">
+                <h2>1</h2>
+            </div>
+            <div id="skill">
+                <div id="techskill">
+                    <h2>2</h2>
+                </div>
+                <div id="personalskill">
+                    <h2>3</h2>
+                </div>
+            </div>
+        </div>
+    
     </div>
-
-    <div id="content-bawah"></div>
-
-</div>
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" 
-    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
     crossorigin="anonymous"></script>
 
 </html>
