@@ -30,7 +30,7 @@ body {
 }
 
 #header {
-    background-color: #52796F;
+    background-color: #FFFFFF;
     padding: 64px ;
     flex-basis: 20%;
     /* flex-grow: 1; */
@@ -62,7 +62,7 @@ body {
 } */
 
 #content-edu {
-    background-color: #81B29A;
+    background-color: #FFFFFF;
     padding: 64px;
     /* display: flex;
     flex-direction: row; */
